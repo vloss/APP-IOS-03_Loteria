@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loteria" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -22,13 +22,41 @@
                                     <constraint firstAttribute="width" secondItem="c5d-k6-es0" secondAttribute="height" multiplier="3:1" id="1YT-82-dpm"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mega-Sena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gst-XM-MI8">
+                                <rect key="frame" x="16" y="91" width="358" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kp4-Z3-TF3">
+                                <rect key="frame" x="16" y="196" width="358" height="32"/>
+                                <segments>
+                                    <segment title="Mega-Sena"/>
+                                    <segment title="Quina"/>
+                                </segments>
+                                <color key="tintColor" red="0.16470588235294117" green="0.38823529411764707" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izz-Ba-XGc">
+                                <rect key="frame" x="158" y="744" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.38823529410000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="FEa-gU-KRv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Kp4-Z3-TF3" firstAttribute="top" secondItem="c5d-k6-es0" secondAttribute="bottom" constant="16" id="0fp-3K-LSn"/>
+                            <constraint firstItem="gst-XM-MI8" firstAttribute="centerY" secondItem="c5d-k6-es0" secondAttribute="centerY" id="GOe-QZ-rI7"/>
                             <constraint firstItem="c5d-k6-es0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="KCk-kc-tI6"/>
-                            <constraint firstItem="c5d-k6-es0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="en1-B6-X3D"/>
-                            <constraint firstAttribute="trailing" secondItem="c5d-k6-es0" secondAttribute="trailing" id="td4-tI-T5P"/>
+                            <constraint firstItem="Kp4-Z3-TF3" firstAttribute="leading" secondItem="FEa-gU-KRv" secondAttribute="leading" constant="16" id="OsT-Gq-cb8"/>
+                            <constraint firstItem="c5d-k6-es0" firstAttribute="leading" secondItem="FEa-gU-KRv" secondAttribute="leading" id="en1-B6-X3D"/>
+                            <constraint firstItem="gst-XM-MI8" firstAttribute="leading" secondItem="FEa-gU-KRv" secondAttribute="leading" constant="16" id="gPd-ni-jSa"/>
+                            <constraint firstItem="FEa-gU-KRv" firstAttribute="trailing" secondItem="c5d-k6-es0" secondAttribute="trailing" id="td4-tI-T5P"/>
+                            <constraint firstItem="FEa-gU-KRv" firstAttribute="trailing" secondItem="gst-XM-MI8" secondAttribute="trailing" constant="16" id="vBE-oI-Jk9"/>
+                            <constraint firstItem="FEa-gU-KRv" firstAttribute="trailing" secondItem="Kp4-Z3-TF3" secondAttribute="trailing" constant="16" id="z7w-d6-1dk"/>
                         </constraints>
                     </view>
                 </viewController>
